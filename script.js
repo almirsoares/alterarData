@@ -53,6 +53,6 @@ function diasProporcionaisAdicionais(diaAnterior, mesAnterior, diaAtual, mesAtua
     } else{
         proporcional = (mesAtual-mesAnterior)*30 - (diaAtual-diaAnterior);
     }
-    return proporcional
+    return proporcional;
 }
     
