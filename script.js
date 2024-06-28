@@ -41,6 +41,18 @@ function validarData(data) {
 function calcularDiasDeUso(diaAnterior, diaAtual) {
     // Calcula os dias de uso
     let diasDeUso = 0;
-    diasDeUso = 30 + (diaAtual - diaAnterior);
+    diasDeUso = 30 + diasProporcionaisAdicionais(diaAnterior, mesAnterior, diaAtual, mesAtual);
     return diasDeUso;
 }
+
+//Função para calcular os dias proporcionais adicionais
+function diasProporcionaisAdicionais(diaAnterior, mesAnterior, diaAtual, mesAtual){
+
+    //=SE(B5 > B4; (B5 - B4) * 30 + (B3 - B2); (B5 - B4) * 30 - (B2 - B3))
+    //DIA ATUAL = b2
+//DIA FUTURO =b3
+//MÊS ATUAL =b4
+//MÊS FUTURO =b5
+    return proporcional
+}
+    
