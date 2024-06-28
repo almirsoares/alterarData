@@ -47,12 +47,12 @@ function calcularDiasDeUso(diaAnterior, diaAtual) {
 
 //Função para calcular os dias proporcionais adicionais
 function diasProporcionaisAdicionais(diaAnterior, mesAnterior, diaAtual, mesAtual){
-
-    //=SE(B5 > B4; (B5 - B4) * 30 + (B3 - B2); (B5 - B4) * 30 - (B2 - B3))
-    //DIA ATUAL = b2
-//DIA FUTURO =b3
-//MÊS ATUAL =b4
-//MÊS FUTURO =b5
+    const proporcional = 0;
+    if (mesAtual > mesAnterior){
+        proporcional = (mesAtual-mesAnterior)*30 + (diaAtual-diaAnterior);
+    } else{
+        proporcional = (mesAtual-mesAnterior)*30 - (diaAtual-diaAnterior);
+    }
     return proporcional
 }
     
